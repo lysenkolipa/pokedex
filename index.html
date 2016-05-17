@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang=en>
+<title>Pokedex</title>
+<meta charset=utf-8>
+<link rel=stylesheet href=reset.css>
+<link rel=stylesheet href=index.css>
+<script src=index.js defer></script>
+
+<template data-for=type>
+    <li>
+        <button is=pokedex-type kind=${name}>
+            ${name}
+        </button>
+</template>
+
+<template data-for=preview>
+    <article is=pokedex-card number=${pkdx_id}>
+        <img src=${api}/media/img/${pkdx_id}.png alt=${name}>
+        <h1>${name} #${pkdx_id}</h1>
+        <ul>@{types as type}</ul>
+    </article>
+</template>
+
+<template data-for=details>
+    <h1>${name}</h1>
+    <table>
+        <tr><td>Attack<td>${attack}
+        <tr><td>Defense<td>${defense}
+        <tr><td>SP Attack<td>${sp_atk}
+        <tr><td>SP Defense<td>${sp_def}
+        <tr><td>HP<td>${hp}
+        <tr><td>Speed<td>${speed}
+        <tr><td>Weight<td>${weight}
+    </table>
+</template>
+
+<header>
+<em class="ball left"><img class=headerImg src="pokeball.png"></em>
+<em>P</em>
+<em >o</em>
+<em>k</em>
+<em>e</em>
+<em>d</em>
+<em>e</em>
+<em>x</em>
+<em class="ball right"><img class=headerImg src="pokeball.png"></em>
+</header>
+<main> </main>
+
+<dialog class=pokedex-details></dialog>
+<button class=pokedex-load>
+    Load more
+    <progress hidden></progress>
+</button>
+
