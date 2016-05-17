@@ -1,0 +1,216 @@
+
+	html, body, h1, article, figure, figcaption, ul, li
+{
+	all:unset;
+}
+
+html
+{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+} 
+
+li
+{
+	list-style-type: none;
+}
+
+body 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/wallpapers.jpg");
+  color: #FFFF00;
+}
+
+html::before, html::after, body::before, body::after 
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: .5vmin;
+  height: .5vmin;
+  border-radius: 50%;
+  color: transparent;
+}
+
+header 
+{
+  margin-top: 179px;
+  height: 7vmin;
+  width: 110vmin;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+header::before 
+{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -27vmin;
+  left: 24vmin;
+  width: 62vmin;
+  height: 62vmin;
+  border-radius: 50%;
+  border: 1.3vmin solid currentColor;
+  box-sizing: border-box;
+}
+
+.headerImg{
+  width: 80px;
+  height: 80px;
+}
+
+em 
+{
+  font-family: "PocketmonkFont";
+  color: currentColor;
+  font-size: 15vmin;
+  position: relative;
+  font-style: normal;
+  width: 25vmin;
+  text-align: center;
+  text-shadow: shadow1, shadow2, shadow3;
+  text-shadow: 6px 3px 0px #4169E1, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+em.ball 
+{
+  animation: planet-rotate 4s linear infinite;
+  position: relative;
+}
+
+em.ball::before 
+{
+  content: "";
+  position: absolute;
+  top: -0.5vmin;
+  left: 1.5vmin;
+  z-index: -1;
+  
+}
+
+em.ball.left 
+{
+  transform-origin: 40vmin 5vmin;
+}
+
+em.ball.right 
+{
+  transform-origin: -30vmin 5vmin;
+}
+
+@keyframes planet-rotate 
+{
+  to {
+        transform: rotate(1turn);
+    }
+}
+
+@font-face
+ {
+    font-family: "PocketmonkFont"; 
+    src: url("fonts/PocketMonk.otf"); 
+ }
+
+ @media(max-width:480px)
+ {
+    header
+    {
+      font-size: 16.66666vw;
+    }
+ }
+
+main
+{
+	margin-top: 210px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+article
+{
+	width: 155px;
+	margin: 10px 14px;
+	padding: 10px;
+	box-shadow: -4px 4px 3px #FFD700, 1px -1px 2px #FFD700;
+	border-radius: 5px;
+}
+
+article img
+{
+	display: block;
+	margin: 0 auto;
+}
+
+article h1
+{
+	font-family: "PocketmonkFont";
+	font-size: 1.5em;
+  color:#FFFF00;
+	border-bottom: 1px solid #9ACD32;
+}
+
+article ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0 5px;
+}
+
+article ul li button
+{
+	width: 75px;
+	font-family: "PocketmonkFont";
+	font-size: 1.1em;
+	font-weight: 400;
+	margin: 0 0 3px 10px;
+	padding: 3px 0;
+	border-radius: 5px;
+}
+
+article ul li button:first-child
+{
+	margin: 10px;
+}
+
+button.pokedex-load
+{
+	width: 130px;
+	height: 35px;
+	font-size: 1.5em;
+  font-family: "PocketmonkFont";
+	color: #FF0000;
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+	display:block;
+  background-color: #FFD700;
+}
+
+[kind=bug]{background: #9ACD32;}
+[kind=poison]{background: #FF6347;}
+[kind=flying]{background: #AFEEEE;}
+[kind=grass]{background: #00FA9A;}
+[kind=normal]{background: #FFD700;}
+[kind=fire]{background: #FF0000;}
+[kind=water]{background:#87CEEB;}
+[kind=electric]{background:#ADFF2F;}
+[kind=fairy]{background:#FF8C00;}
+[kind=fighting]{background:#FF1493;}
+[kind=ice]{background:#FFFAF0;}
+[kind=ground]{background:#F0E68C;}
+[kind=rock]{background:#00CED1;}
+[kind=steel]{background:#778899;}
+[kind=psychic]{background:#FFB6C1;}
+[kind=ghost]{background: #EEE8AA;}
