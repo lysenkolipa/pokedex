@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 	html, body, h1, article, figure, figcaption, ul, li
 {
@@ -132,6 +133,39 @@ em.ball.right
 main
 {
 	margin-top: 210px;
+=======
+body
+{
+	width: 1024px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+/*	margin: 0 auto;*/
+}
+
+header 
+{	
+	font-family: Arial;
+	font-size: 80px;
+	font-weight: 700;
+	color: white;
+	text-shadow: -4px 4px 3px #666, 1px -1px 2px #000;
+
+	margin: 35px 0;
+}
+
+@media (max-width: 480px)
+{
+	header
+	{
+		font-size: 16.66666vw;
+	}
+}
+
+main
+{
+>>>>>>> shvaikalesh/master
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -140,9 +174,17 @@ main
 article
 {
 	width: 155px;
+<<<<<<< HEAD
 	margin: 10px 14px;
 	padding: 10px;
 	box-shadow: -4px 4px 3px #FFD700, 1px -1px 2px #FFD700;
+=======
+
+	margin: 10px 14px;
+	padding: 10px;
+
+	box-shadow: -4px 4px 3px #666, 1px -1px 2px #000;
+>>>>>>> shvaikalesh/master
 	border-radius: 5px;
 }
 
@@ -154,10 +196,18 @@ article img
 
 article h1
 {
+<<<<<<< HEAD
 	font-family: "PocketmonkFont";
 	font-size: 1.5em;
   color:#FFFF00;
 	border-bottom: 1px solid #9ACD32;
+=======
+	font-family: Courier;
+	font-size: 1.1em;
+	letter-spacing: 0.5px;
+
+	border-bottom: 1px solid red;
+>>>>>>> shvaikalesh/master
 }
 
 article ul
@@ -165,15 +215,27 @@ article ul
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+<<<<<<< HEAD
+=======
+
+>>>>>>> shvaikalesh/master
 	margin: 10px 0 5px;
 }
 
 article ul li button
 {
 	width: 75px;
+<<<<<<< HEAD
 	font-family: "PocketmonkFont";
 	font-size: 1.1em;
 	font-weight: 400;
+=======
+
+	font-family: Arial;
+	font-size: 1.1em;
+	font-weight: 400;
+
+>>>>>>> shvaikalesh/master
 	margin: 0 0 3px 10px;
 	padding: 3px 0;
 	border-radius: 5px;
@@ -181,6 +243,7 @@ article ul li button
 
 article ul li button:first-child
 {
+<<<<<<< HEAD
 	margin: 10px;
 }
 
@@ -214,3 +277,87 @@ button.pokedex-load
 [kind=steel]{background:#778899;}
 [kind=psychic]{background:#FFB6C1;}
 [kind=ghost]{background: #EEE8AA;}
+=======
+	margin: 0;
+}
+
+button.load-more
+{
+	width: 150px;
+
+	font-size: 1.5em;
+	font-weight: 700;
+	color: white;
+	text-shadow: -4px 4px 3px #666, 1px -1px 2px #000;
+
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	/*background: white;*/
+}
+
+[kind=bug]
+{
+	background: brown;
+}
+[kind=electric]
+{
+	background: yellow;
+}
+[kind=fairy]
+{
+	background: #D2B13A;
+}
+[kind=fighting]
+{
+	background: #EC2FDE;
+}
+[kind=flying]
+{
+	background: #C4A6FF;
+}
+[kind=fire]
+{
+	background: red;
+}
+[kind=ghost]
+{
+	background: #BBBBBB;
+}
+[kind=grass]
+{
+	background: #65F9A7;
+}
+[kind=ground]
+{
+	background: #966B34;
+}
+[kind=ice]
+{
+	background: #C5FFFC;
+}
+[kind=normal]
+{
+	background: white;
+}
+[kind=poison]
+{
+	background: #46C646;
+}
+[kind=psychic]
+{
+	background: #B4FFBD;
+}
+[kind=rock]
+{
+	background: #FFD0D0;
+}
+[kind=steel]
+{
+	background: #EAFFB9;
+}
+[kind=water]
+{
+	background: #B5D3FF;
+}
+>>>>>>> shvaikalesh/master
